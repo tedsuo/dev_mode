@@ -16,8 +16,9 @@ function SubProcess(o){
   this.error_prompt = this.prompt+ clc.red('ERROR ');
   
   // initialize proccess attributes 
-  this.command = o.command || error('o.command required');
-  this.args = o.args || [];
+  this.command_string = o.command || error('o.command required');
+  this.args = this.command_string.trim().split(/\s/);
+  this.command = this.args.shift();
   this.cwd = o.cwd; 
   this.env = _.extend(o.env || {}, process.env);
 

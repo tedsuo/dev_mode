@@ -19,19 +19,19 @@ module.exports = {
 
 // ### dev server
     {
-      name: 'Example Server https:/localhost:8080/',
+      name: 'Example Server',
       prompt: 'S',
       color: 'magenta',
-      command: 'NODE_ENV=development npm start',
-      args: []
+      command: 'npm start',
+      env: {NODE_ENV:'development'} 
     },
 // ### test suite 
     {
-      name: 'Example test suite',
+      name: 'Example Test Suite',
       prompt: 'T',
       color: 'blue',
-      command: 'npm', 
-      args: ['test']
+      command: 'npm test', 
+      env: {NODE_ENV:'test'} 
     }
   ]
 }
