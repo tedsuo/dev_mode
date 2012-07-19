@@ -15,6 +15,7 @@ module.exports = {
   ],
 
 // ## processes
+// see readme for options 
   processes: [
 
 // ### dev server
