@@ -8,7 +8,7 @@
     "url": "https://github.com/tedsuo/dev_mode.git"
   },
   "preferGlobal": true,
-  "main": "index.js",
+  "main": "dev_mode.js",
   "engines": {
     "node": ">=0.6.0"
   },
