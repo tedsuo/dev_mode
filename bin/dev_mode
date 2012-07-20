@@ -1,2 +1,15 @@
 #!/usr/bin/env node
-require(__dirname+'/../');
+switch(process.argv[2]){
+  case 'install':
+    require(__dirname+'/../install');
+    break;
+  
+  case 'start':
+    require(__dirname+'/../dev_mode');
+    break;
+
+  default:
+    console.log('Usage: dev_mode <command>');
+    console.log('install - create a config file');
+    console.log('start - start dev_mode');
+};
