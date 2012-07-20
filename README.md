@@ -23,34 +23,36 @@ start dev\_mode:
 
 ## Dev\_Mode Configuration
 
-**cwd** _optional_ root path for file watching, defaults to the current directory
+configuration file exports an object with the following properties:
 
-**watch_list** array of files and folders to watch
+**cwd:** _optional_ root path for file watching, defaults to the current directory
 
-**recursive\_watch\_list** array of files and folders to watch
+**watch_list:** array of files and folders to watch
 
-**processes** array of process configurations
+**recursive\_watch\_list:** array of files and folders to watch
 
-## Process Configuration
+**processes:** array of process configurations
+
+### Process Configuration
 
 The following options are available for each item in the processes list:
 
-### Console Options
+#### Console Options
 
-**name** name to display in console
+**name:** name to display in console
 
-**prompt** prompt to display in console
+**prompt:** prompt to display in console
 
-**color** prompt color
+**color:** prompt color
 
-**bg\_color** _optional_ prompt background color if you're into that sort of thing
+**bg\_color:** _optional_ prompt background color if you're into that sort of thing
 
-### Command options
+#### Command options
 
-**command** command to invoke (including command-line arguments)
+**command:** command to invoke (including command-line arguments)
 
-**env** _optional_ environment variables to pass to process
+**env:** _optional_ environment variables to pass to process
 
-**cwd** _optional_ directory to invoke the process from, if different from current directory
+**cwd:** _optional_ directory to invoke the process from, if different from current directory
 
-**on\_startup** _optional_ set to false if you would only like this process invoked after a file change
+**on\_startup:** _optional_ set to false if you would only like this process invoked after a file change
