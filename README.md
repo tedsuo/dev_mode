@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/tedsuo/dev_mode.png)](http://travis-ci.org/tedsuo/dev_mode)
 # DEV\_MODE
 A handy development utility.
 
