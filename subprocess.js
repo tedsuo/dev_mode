@@ -124,7 +124,7 @@ console.dev = function(msg){
     return log_msg;
   }
 
-  console.log(clc.bright.green(center(msg)));
+  console.log(clc.greenBright(center(msg)));
 }
 
 // - error
