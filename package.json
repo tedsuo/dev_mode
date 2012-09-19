@@ -15,7 +15,7 @@
   "dependencies": {
     "nodewatch" : "" , 
     "underscore" : "",
-    "cli-color" : ""
+    "cli-color" : "0.2.x"
   },
   "directories" : {
     "bin": "./bin"  
